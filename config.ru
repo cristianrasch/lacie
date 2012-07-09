@@ -1,0 +1,2 @@
+require "./lacie"
+run Lacie
