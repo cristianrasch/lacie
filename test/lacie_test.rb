@@ -1,16 +1,19 @@
-require File.expand_path("lacie")
-require "minitest/autorun"
-require "rack/test"
+# coding: utf-8
 
-class LacieTest < Test::Unit::TestCase
-  include Rack::Test::Methods
+require File.expand_path("capybara_test_case", "test/support")
 
-  def app
-    Lacie
+class LacieTest < CapybaraTestCase
+  def test_home
+    visit "/"
+    
+    assert_equal "/", current_path
+    assert page.has_content?("Laboratorio Abierto de la Carrera de Ingeniería Electrónica")
   end
-
-  #def test_my_default
-  #  get '/'
-  #  assert_equal 'Hello World!', last_response.body
-  #end
+  
+  def test_visiting_an_invalid_page
+    visit "/blah"
+    
+    assert_equal "/", current_path
+    assert page.has_content?("Laboratorio Abierto de la Carrera de Ingeniería Electrónica")
+  end
 end

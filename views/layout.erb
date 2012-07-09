@@ -39,7 +39,7 @@
             <span class="icon-bar"></span>
             <span class="icon-bar"></span>
           </a>
-          <a class="brand" href="/">LACIE</a>
+          <a class="brand" href="<%= url "/" %>">LACIE - Laboratorio Abierto de la Carrera de Ingeniería Electrónica</a>
           <!--div class="btn-group pull-right">
             <a class="btn dropdown-toggle" data-toggle="dropdown" href="#">
               <i class="icon-user"></i> Username
@@ -78,7 +78,15 @@
             </ul>
           </div><!--/.well -->
         </div><!--/span-->
+        
         <div class="span9">
+          <% if flash[:notice] || flash[:error] %>
+            <div class="alert alert-<%= flash[:notice] ? "success" : "error" %>">
+              <a class="close" data-dismiss="alert" href="#">×</a>
+              <%= flash[:notice] || flash[:error] %>
+            </div>
+          <% end %>
+          
           <%= yield %>
         </div><!--/span-->
       </div><!--/row-->
@@ -86,7 +94,7 @@
       <hr>
 
       <footer>
-        <p>&copy; UNLaM <%= Date.today.year %></p>
+        <p>&copy; LACIE <%= Date.today.year %></p>
       </footer>
 
     </div><!--/.fluid-container-->
