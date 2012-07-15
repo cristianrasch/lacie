@@ -1,0 +1,12 @@
+<div class="well sidebar-nav sidebar-nav-fixed">
+  <ul class="nav nav-list">
+    <li class="nav-header">Menú</li>
+    <li class="<%= "active" if request.path_info == "/" %>"><a href="<%= url("/") %>"><i class="icon-home"></i>Home</a></li>
+    <li class="<%= "active" if request.path_info =~ /actividades/ %>"><a href="<%= url("/actividades") %>"><i class="icon-tasks"></i>Actividades</a></li>
+    <li class="<%= "active" if request.path_info == "/integrantes" %>"><a href="<%= url("/integrantes") %>"><i class="icon-user"></i>Integrantes</a></li>
+    <li class="<%= "active" if request.path_info =~ /instrumental/ %>"><a href="<%= url("/instrumental") %>"><i class="icon-wrench"></i>Instrumental</a></li>
+    <li class="<%= "active" if request.path_info == "/publicaciones" %>"><a href="<%= url("/publicaciones") %>"><i class="icon-book"></i>Publicaciones</a></li>
+    <li class="<%= "active" if request.path_info == "/reglamento" %>"><a href="<%= url("/reglamento") %>"><i class="icon-list-alt"></i>Reglamento</a></li>
+    <li class="<%= "active" if request.path_info == "/contacto" %>"><a href="<%= url("/contacto") %>"><i class="icon-pencil"></i>Contacto</a></li>
+  </ul>
+</div><!--/.well -->

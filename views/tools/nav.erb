@@ -1,0 +1,8 @@
+<ul class="nav nav-tabs">
+  <li class="<%= "active" if request.path_info == "/instrumental/kits-de-desarrollo" %>">
+    <a href="<%= url("/instrumental/kits-de-desarrollo") %>">Kits de desarrollo</a>
+  </li>
+  <li class="<%= "active" if request.path_info == "/instrumental/maquinas-y-herramientas" %>">
+    <a href="<%= url("/instrumental/maquinas-y-herramientas") %>">Máquinas y herramientas</a>
+  </li>
+</ul>

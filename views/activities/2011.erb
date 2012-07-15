@@ -1,0 +1,52 @@
+<%= erb :"activities/nav" %>
+
+<div class="hero-unit">
+  <div class="page-header">
+    <h1>Actividades 2011</h1>
+  </div>
+  
+  <blockquote>
+    <h3>
+      Organización de ExpoProyecto 2011<br/>
+      Del 25 al 27 del Octubre de 2011 de 18 a 21hs en el Patio de Las Américas de la UNLaM
+    </h3>
+  </blockquote>
+  <ul>
+    <li>Nuevo <a href="http://expo-proyecto.lacie-unlam.org/">sistema de inscripción para expositores</a>, con opciones de fotos, confirmación por email, online, autogestionado por los participantes, opción para imprimer gafetes, listados de reportes, etc.</li>
+    <li>Museo de electrónica.</li>
+  </ul>
+  
+  <blockquote>
+    <h3>
+      Robolucha UNLaM 2011 (lucha de robots sumo).<br/>
+      26 de Octubre de 2011 de 18:30 a 21hs en el gimnasio de la UNLaM
+    </h3>
+  </blockquote>
+  <ul>
+    <li>Organización general del evento.</li>
+    <li>Gestión de los materiales para construcción de los robots.</li>
+    <li>Asistencia a los alumnos en la construcción de los robots.</li>
+    <li>Confección de <a href="#" id="remera2011" rel="popover" data-content="<img src='<%= url("/img/remera2011.jpg") %>'/>" data-original-title="Remera Robolucha 2011">remera 2011</a> y medallas.</li>
+    <li>Coordinación de asistencia a la Competencia Nacional de Bahía Blanca, con 9 alumnos y dos docentes.</li>
+  </ul>
+
+  <blockquote>
+    <h3>Otras actividades destacadas</h3>
+  </blockquote>
+  <ul>
+    <li>Segundo <a href="http://www.cursoplc.com.ar/">curso de PLC</a>, nivel inicial.</li>
+    <li>Mejora del servidor, mejora infraestructura de red (Rasch)</li>
+    <li>Alojamiento web, dominio lacie-unlam.org, administración y manejador de contenidos drupal (Rasch/Brengi)</li>
+    <li>Trabajo presentado al <a href="http://www.ing.unlp.edu.ar/uea2011/">Segundo Congreso de Microeletrónica Aplicada</a> "Competencia de sumo robot para la enseñanza de electrónica y robótica práctica" (Brengi et al.), publicados en el libro "<a href="http://lacie-unlam.org/publicaciones/2011/uEA2011_Robolucha.pdf">Libro de Memorias: II Congreso de Microelectrónica Aplicada 2011</a>", ISBN 978-950-34-0749-3, 300p, 30x21cm.</li>
+    <li>Solicitud, compra, prueba y recepción en el laboratorio de un osciloscopio digital con 2 canales analógicos y 16 digitales, de 100 MHz y 2Gs/s.</li>
+    <li>Luego de la solicitud del LACIE para colocar cortinas en los laboratorios, en 2011 fueron instaladas cortinas en todos los laboratorios de electrónica que tienen ventana al exterior.</li>
+    <li>Implementación de un tablero de herramientas de uso más frecuente. El tablero permite organizar las herramientas y controlar fácilmente que estén todas en su lugar. Además agiliza el trabajo ya que se acceden mucho más rápido. Estas herramientas son de uso libre en el LACIE, por lo que el alumno no debe perder tiempo armando papeles de solicitud.</li>
+    <li>Implementación de un gavetero de uso interno para resistores de todos los valores. Además se gestionó la compra de un stock completo de resistores. Estas acciones facilitan el desarrollo de circuitos y evitan tiempos de demora para comprar resistores, ya que se dispone de todos los valores para su uso en circuitos. Este stock se mantendrá anualmente.</li>
+  </ul>
+</div>
+
+<% content_for :js do %>
+  <script>
+    $('#remera2011').popover({ html: true });
+  </script>
+<% end %>

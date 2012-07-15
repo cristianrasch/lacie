@@ -1,0 +1,7 @@
+<ul class="nav nav-tabs">
+  <% %w(2012 2011 2010 2009 2008 2007 2005-2006).each do |year| %>
+    <li class="<%= "active" if request.path_info == "/actividades/#{year}" %>">
+      <a href="<%= url("/actividades/#{year}") %>"><%= year %></a>
+    </li>
+  <% end %>
+</ul>

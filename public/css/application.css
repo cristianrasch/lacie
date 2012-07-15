@@ -5,3 +5,24 @@ div#myCarousel {
 .carousel .item > img {
   display: inline;
 }
+
+.sidebar-nav-fixed {
+  padding: 9px 0;
+  position:fixed;
+  left:20px;
+  top:60px;
+  width:23.2%;
+}
+
+.row-fluid > .span-fixed-sidebar {
+  margin-left: 290px;
+}
+
+div.caption h5 {
+  text-align: center;
+}
+
+div.caption p {
+  font-size: small;
+  /*text-align: center;*/
+}
