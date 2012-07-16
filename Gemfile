@@ -10,4 +10,8 @@ group :development do
   gem "rvm-capistrano"
 end
 
-gem "capybara", group: :test
+group :test do
+  gem "capybara"
+  gem "capybara-webkit"
+  # gem "launchy"
+end
