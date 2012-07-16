@@ -24,5 +24,14 @@ div.caption h5 {
 
 div.caption p {
   font-size: small;
-  /*text-align: center;*/
+}
+
+div.event {
+  margin-top: 30px;
+  border-top: 1px solid #EEE;
+  border-bottom: 1px solid #EEE;
+}
+
+div.event p {
+  font-style: italic;
 }
