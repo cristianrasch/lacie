@@ -35,3 +35,9 @@ div.event {
 div.event p {
   font-style: italic;
 }
+
+img.center {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+}
