@@ -46,3 +46,7 @@ div.header-logo {
   padding-top: 3px;
   float: right;
 }
+
+td.valigned {
+  vertical-align: middle;
+}
